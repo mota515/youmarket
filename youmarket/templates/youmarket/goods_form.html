@@ -1,0 +1,16 @@
+<form method="post" autocomplete="off" enctype="multipart/form-data">{% csrf_token %}
+    {{form.title}}
+    <br>
+    {% for radio in form.price %}
+        {{radio}}
+    {% endfor %}
+    <br>
+    {{form.image1}}
+    <br>
+    {{form.image2}}
+    <br>
+    {{form.image3}}
+    <br>
+    {{form.content}}
+    <button type="submit">완료</button>
+</form>

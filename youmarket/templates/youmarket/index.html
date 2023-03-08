@@ -1,0 +1,5 @@
+<h1>hello</h1>
+<a href="{% url 'Goods-create' %}">게시글 작성</a>
+{% for goods in goodss %}
+    <h1>{{goods.title}}</h1>
+{% endfor %}
